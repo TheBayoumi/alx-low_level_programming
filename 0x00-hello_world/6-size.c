@@ -1,9 +1,10 @@
 #include<stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * main - entry point
+ * @void: no arguments
+ * Description: the program starts and ends here.
+ * Return: value 0 to exit
+ */
 int main(void)
 {
 int ch = sizeof(char);
@@ -17,3 +18,4 @@ printf("Size of a long int: %d byte(s)\n", ln_in);
 printf("Size of a long long int: %d byte(s)\n", ln_ln_in);
 printf("Size of a float: %d byte(s)\n", fl);
 return (0);
+}
