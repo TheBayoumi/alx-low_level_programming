@@ -6,32 +6,17 @@
  */
 int main(void)
 {
-int n, k = 0, m;
-for (n = 0; n < 9; n++)
+int num;
+for (num = 0; num < 100; num++)
 {
-for (m = k ; m <= 9; m++)
+putchar((num / 10) + '0');
+putchar((num % 10) + '0');
+if (num < 99)
 {
-if (n != m)
-{
-putchar(n);
-putchar(m);
-}
-if (n == m)
-{
-continue;
-}
-if (n == '8' && m == '9')
-{
-break;
-}
-else
-{
-putchar(',');
-putchar(' ');
+putchar(44);
+putchar(32);
 }
 }
-k++;
-}
-putchar('\n');
+putchar(10);
 return (0);
 }
